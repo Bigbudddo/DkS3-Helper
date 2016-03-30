@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyReleased="#key_releasedEvent" prefHeight="480.0" prefWidth="600.0" stylesheets="@../style/test.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dks3counter.FXMLDocumentController">
+    <children>
+      <TabPane layoutX="108.0" layoutY="192.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <tabs>
+          <Tab text="Death Counter">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #222222;">
+                     <children>
+                          <Label fx:id="lbl_death_display" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="224.0" minHeight="16" minWidth="69" text="0 times" textAlignment="JUSTIFY" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="OptimusPrinceps" size="36.0" />
+                           </font></Label>
+                        <Label layoutX="81.0" layoutY="150.0" text="You Have Died" textFill="#b52626">
+                           <font>
+                              <Font name="OptimusPrinceps" size="64.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="498.0" layoutY="354.0" onMouseClicked="#btn_death_plusAction" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="OptimusPrinceps" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="427.0" layoutY="382.0" onMouseClicked="#btn_death_plusAction" text="Add Death (F1)" textFill="WHITE">
+                           <font>
+                              <Font name="OptimusPrinceps" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="331.0" onMouseClicked="#btn_death_minusAction" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="OptimusPrinceps" size="64.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="384.0" onMouseClicked="#btn_death_minusAction" text="Remove (F2)" textFill="WHITE">
+                           <font>
+                              <Font name="OptimusPrinceps" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="14.0" text="Keep track of how many times your character has perished." textFill="WHITE">
+                           <font>
+                              <Font name="OptimusPrinceps" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Boss Checklist">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox layoutX="212.0" layoutY="37.0" mnemonicParsing="false" text="Dancer of the Boreal Valley" />
+                        <CheckBox layoutX="212.0" layoutY="61.0" mnemonicParsing="false" text="Yhorm the Giant" />
+                        <CheckBox layoutX="212.0" layoutY="86.0" mnemonicParsing="false" text="Curse-Rotted Greatwood" />
+                        <CheckBox layoutX="212.0" layoutY="110.0" mnemonicParsing="false" text="Vordt of the Boreal Valley" />
+                        <CheckBox layoutX="212.0" layoutY="135.0" mnemonicParsing="false" text="Ludex Gundyr" />
+                        <CheckBox layoutX="212.0" layoutY="163.0" mnemonicParsing="false" text="Aldrich, Devourer of Gods" />
+                        <CheckBox layoutX="212.0" layoutY="189.0" mnemonicParsing="false" text="Abyss Watchers" />
+                        <CheckBox layoutX="212.0" layoutY="213.0" mnemonicParsing="false" text="Crystal Sage" />
+                        <CheckBox layoutX="212.0" layoutY="239.0" mnemonicParsing="false" text="Deacons of the Deep" />
+                        <CheckBox layoutX="212.0" layoutY="265.0" mnemonicParsing="false" text="High Lord Wolnir" />
+                        <CheckBox layoutX="212.0" layoutY="291.0" mnemonicParsing="false" text="Pontiff Sylyvahn" />
+                        <CheckBox layoutX="213.0" layoutY="318.0" mnemonicParsing="false" text="Old Demon King" />
+                        <CheckBox layoutX="213.0" layoutY="343.0" mnemonicParsing="false" text="Oceiros, the Consumed King" />
+                        <CheckBox layoutX="212.0" layoutY="367.0" mnemonicParsing="false" text="Ancient Wyvern" />
+                        <CheckBox layoutX="405.0" layoutY="37.0" mnemonicParsing="false" text="The Nameless King" />
+                        <CheckBox layoutX="405.0" layoutY="61.0" mnemonicParsing="false" text="Lorian, Elder Prince &amp; Lothric, Younger Prince" />
+                        <CheckBox layoutX="405.0" layoutY="86.0" mnemonicParsing="false" text="Champion Gundyr" />
+                        <CheckBox layoutX="405.0" layoutY="110.0" mnemonicParsing="false" text="Dragonslayer Armour" />
+                        <CheckBox layoutX="405.0" layoutY="135.0" mnemonicParsing="false" text="Soul of Cinder" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <MenuBar layoutX="29.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menu_NewCharacter" text="New Character" />
+                  <MenuItem mnemonicParsing="false" onAction="#menu_LoadCharacter" text="Load Character" />
+              <MenuItem mnemonicParsing="false" onAction="#menu_Quit" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Reset" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menu_About" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>
